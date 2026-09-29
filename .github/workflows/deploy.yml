@@ -19,8 +19,7 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 6.0.x
-    - name: Restore dependencies
-      run: dotnet restore
+    - run: dotnet restore
     - name: Build the app
       run: dotnet build --no-restore
     - name: Run unit tests
