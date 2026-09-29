@@ -28,7 +28,7 @@ jobs:
       run: dotnet test --no-build --verbosity normal
 
   run_security_scan:
-
+    needs: build_test
     runs-on: ubuntu-latest
 
     steps:
