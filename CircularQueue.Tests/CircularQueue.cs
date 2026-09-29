@@ -52,9 +52,11 @@ namespace CircularQueue.Tests
             }
         }
 
+        // Summary>
+        /// Removes and returns the first element in the queue.
         public T Dequeue()
         {
-            if (this.Count == 1)
+            if (this.Count == 0)
                 throw new InvalidOperationException("The queue is empty!");
 
             T result = this.elements[this.StartIndex];
