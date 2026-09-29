@@ -10,7 +10,6 @@ on:
 
 jobs:
   build_test:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -29,7 +28,7 @@ jobs:
 
   run_security_scan:
     needs: build_test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
 
     steps:
     - name: Checkout the code
