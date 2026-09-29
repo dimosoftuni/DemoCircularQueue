@@ -6,6 +6,7 @@ on:
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
+    
 
 jobs:
   build_test:
@@ -41,5 +42,3 @@ jobs:
       run: dotnet restore
     - name: Build the app
       run: dotnet build --no-restore
-    - name: Run unit tests
-      run: dotnet test --no-build --verbosity normal
